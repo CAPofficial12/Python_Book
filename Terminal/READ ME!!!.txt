@@ -1,0 +1,25 @@
+READ ME!!!
+-------------------------------------------------------------
+If you're reading this, you've downloaded the Bentrays Terminal system
+There's some things you've gotta know before you implement it:
+1) You need to make sure the sublog.txt logs and log.txt are wiped CLEAN before using
+they might still have some stuff left over from beta version tests used to ensure it was all connected well
+2) You need to edit the source code if you're going to use it in a multi-user system.
+The easiest way to make it multi-user would just be to have a shared drive (Dropbox, google, etc) and move the .txt files there. However, you WILL need to change the save_log(), save_sublog(), load_log() and load_sublog() subroutines as they only run if the files are in that specific folder, within the folder the code is in. if you move them, you'll need to replace ("log files\log.txt") and ("log files\sublog.txt") with the new directory 
+3) you need to run it either in the computer terminal, or some other python compiler that recognises ANSI codes.
+The clear_screen() subroutine requires a port that recognises the ANSI codes it uses so it can do the action it does. otherwise, it won't print properly or at all. my personal recommendation is Thonny, as it should run the python quickly and has an inbuilt run in terminal feature.
+4) the unfortunately named SECURE FOLDER is, unlike its name, not secure at all. so, if you want to use the passwords inside and let people see the source, you're gonna need to move it to your own directory and change the root address in the code itself. However, you still need to make sure other users have some sort of access to it, and that those with the necessary permissions can have write privilege. This is, of course, assuming that the hierarchy will be used at all.
+
+to implement:
+use the compiler you have and open the file. simple as that - so long as you have the .txt log and sublog files in the same folder they came in inside the folder the program is in, it will run smoothly. otherwise, you have to change the source directory.
+
+if a new version is published but you already have an older version:
+fear not, I will deliver the standalone file in due course and all you need to do is replace the saving subroutines with pass and move the older version into the legacy version file
+
+the legacy versions included in the similarly named folder are included for your viewing pleasure, rather than for running. most of them were updated simply because they didn't work at all. it's closer to a living changelog than a library of stable versions
+
+-------------------------------------------------------------
+
+IF THE VERSION IS BEYOND RC 5 STAGE DO NOT READ
+
+the passwords are all hard-coded inside the program itself, so you're gonna need to keep the source code hidden from users.

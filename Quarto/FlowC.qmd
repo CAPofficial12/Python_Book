@@ -1,0 +1,27 @@
+---
+title: "Quarto Basics"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+```{mermaid}
+flowchart 
+   M(["Start"]) --> A["Total <- 0"]
+   A --> B["counter <- 0"]
+   B --> X(( )) 
+   X --> C{Counter == 10}
+
+   C --> |yes|E[/"OUTPUT "Finished""/]
+   E --> Z("AvergeWeekTemp <- Total / 7")
+   Z --> Y[/"OUTPUT "This week's average is:""/]
+   Y --> V[/"OUTPUT averageWeeksTemp"/]
+   V --> L(["END"])
+
+   C --> |no|D[/"OUTPUT "Counter""/]
+   D --> F[/"INPUT MaxTemperature"/]
+   F --> G("Total <- Total + MaxTemperature")
+   G --> H("NEXT Counter")
+   H --> X
+```

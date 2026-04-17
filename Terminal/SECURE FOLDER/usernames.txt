@@ -1,0 +1,15 @@
+-----user name-----
+this one for user, same rules as password apply
+UserBasic
+-----Admin name-----
+you know it already
+admin
+-----Maintenance name-----
+so easy atp
+MAINT team
+-----owner name-----
+yayayayay
+Owner1
+-----hacker name-----
+OHMAIYGOT DEY HACKING IN
+import WORKWORM workworm.run workworm.bypass{username+password} workworm.destroy{evidence}
