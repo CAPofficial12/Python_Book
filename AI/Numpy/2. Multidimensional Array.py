@@ -1,5 +1,7 @@
 import numpy as np
 array = np.array("A")
+
+#Returns number of dimensions in the array
 print(array.ndim)
 print(array.shape)
 
@@ -10,6 +12,8 @@ print(array1.shape)
 array2 = np.array(  [["A", "B","C"], 
                     ["D","E","F"]])
 print(array2.ndim)
+
+#Returns Dimensions of the Array (3,3)
 print(array2.shape)
 
 # Arrays/Matrices require a homogenous shape. Error will occur if array is heterogenous
