@@ -25,4 +25,4 @@ score = np.array([5,9,4,2,3,6,8,7,5,6,7])
 
 # Logical operators also works on all elements
 result = score[score >= 9]
-print(result = 0)
+print(result)
